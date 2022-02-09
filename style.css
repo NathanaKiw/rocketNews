@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Spartan&display=swap');
+* {
+  margin: 0;
+}
+body {
+  margin: 0;
+  background-color: black;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    'header aside'
+    'main aside';
+  grid-template-rows: 1fr 520px;
+  grid-template-columns: 1fr 700px;
+  overflow: hidden;
+}
+header {
+  background-color: rgb(0, 0, 0);
+  grid-area: header;
+}
+img#logo {
+  margin: 40px 0 0 7px;
+  padding-right: 5px;
+  max-width: 100%;
+  max-height: 100%;
+}
+.cat {
+  height: 200px;
+  width: 100%;
+}
+main {
+  background-color: rgb(0, 0, 0);
+  grid-area: main;
+  margin: 10px;
+}
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.4rem;
+  padding: 10px;
+  color: hsla(148, 92%, 39%, 1);
+}
+h2,
+h3,
+p {
+  box-sizing: border-box;
+  font-family: 'Spartan', sans-serif;
+  font-size: 1rem;
+  padding: 10px;
+  margin: 5px 20px 5px 0;
+  color: hsla(0, 0%, 100%, 1);
+}
+h3 {
+  color: hsla(258, 73%, 62%, 1);
+}
+form {
+  margin: 10px auto 20px 10px;
+}
+label {
+  color: hsla(0, 0%, 66%, 1);
+  font-family: 'Spartan', sans-serif;
+}
+li {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: -2px;
+  margin-left: -1.5px;
+}
+a {
+  text-decoration: none;
+  color: hsla(258, 73%, 62%, 1);
+}
+input {
+  display: block;
+  padding: 15px;
+  width: 30rem;
+  border-left: 4px solid hsla(148, 92%, 39%, 1);
+}
+img#button {
+  position: relative;
+  bottom: -19.5px;
+  display: display-box;
+}
+aside {
+  background-color: rgb(0, 0, 0);
+  grid-area: aside;
+}
+img#seta {
+  position: relative;
+  bottom: -7px;
+}
+img#img {
+  width: auto;
+  max-height: 100%;
+}
+.cat2 {
+  height: 700px;
+  overflow: hidden;
+}
