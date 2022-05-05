@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 :root{
-  font-size: 62.5%;
   --background-blck: #000000;
   --primary-color:#08bf5d;
   --secondary-color: #8257E5;
@@ -21,28 +20,28 @@ body{
 .wrapper{
   position: absolute;
   left: 0%;
-  width: 53%;
+  width: 55%;
   height: 100vh;
   background-color: var(--background-blck);
 }
 .wrapper header img{
   width: 55%;
-  margin-left: 3rem;
-  margin-top: 5rem;
+  margin-left: 2.8rem;
+  margin-top: 4rem;
 }
 .content h1{
   width: 100%;
   font-family: 'Work Sans';
   color: var(--primary-color);
   font-weight: 700;
-  font-size: 4.5rem;
+  font-size: 2.7rem;
   line-height: 130%;
 }
 .content h4{
   width: 100%;
   font-family: 'League Spartan';
   font-weight: 700;
-  font-size: 2.8rem;
+  font-size: 1.8rem;
   line-height: 130%;
   color: var(--paragraph);
   margin-top: 1.1rem;
@@ -52,10 +51,10 @@ body{
   font-family: 'League Spartan';
   margin-top: 0.9rem;
   font-weight: 400;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   line-height: 130%;
   color: var(--paragraph);
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 
 }
 .email p {
@@ -66,14 +65,14 @@ body{
 }
 .email  input{
   width: 100%;
-  height: 5rem;
+  height: 4.5rem;
   border: none;
   border-left: 6px solid var(--primary-color) ;
-  margin-left: 3.5rem;
+  margin-left: 1rem;
 }
 .email button {
-  width: 5rem;
-  height: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border: 0.2rem solid var(--secondary-color);
   background-color: var(--secondary-color);
 }
@@ -89,14 +88,14 @@ body{
   width: 30rem;
   align-items: center;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 1.5rem;
 }
 .sign p{
-  font-size: 2.8rem;
+  font-size: 2rem;
   color: var(--secondary-color);
 }
 .sign p img{
-  height: 3rem;
+  height: 1.5rem;
 }
 .content{
   display: flex;
@@ -104,6 +103,6 @@ body{
   width:94%;
   margin-left: 3.6rem;
   margin-right: 3.7rem;
-  margin-top: 8rem;
-  margin-bottom: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
