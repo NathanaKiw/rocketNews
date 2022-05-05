@@ -1,100 +1,110 @@
-@charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Work+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Spartan&display=swap');
-* {
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body {
-  margin: 0;
-  background-color: black;
+:root{
+  font-size: 62.5%;
+  --background-blck: #000000;
+  --primary-color:#08bf5d;
+  --secondary-color: #8257E5;
+  --paragraph: #ffffff;
+}
+body{
   height: 100vh;
-  display: grid;
-  grid-template-areas:
-    'header aside'
-    'main aside';
-  grid-template-rows: 1fr 520px;
-  grid-template-columns: 1fr 700px;
-  overflow: hidden;
+  width: 100vw;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: var(--background-blck);
+
 }
-header {
-  background-color: rgb(0, 0, 0);
-  grid-area: header;
+.wrapper{
+  position: absolute;
+  left: 0%;
+  width: 53%;
+  height: 100vh;
+  background-color: var(--background-blck);
 }
-img#logo {
-  margin: 40px 0 0 7px;
-  padding-right: 5px;
-  max-width: 100%;
-  max-height: 100%;
+.wrapper header img{
+  width: 55%;
+  margin-left: 3rem;
+  margin-top: 5rem;
 }
-.cat {
-  height: 200px;
+.content h1{
+  width: 100%;
+  font-family: 'Work Sans';
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 130%;
+}
+.content h4{
+  width: 100%;
+  font-family: 'League Spartan';
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 130%;
+  color: var(--paragraph);
+  margin-top: 1.1rem;
+}
+.content p{
+  width: 100%;
+  font-family: 'League Spartan';
+  margin-top: 0.9rem;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 130%;
+  color: var(--paragraph);
+  margin-bottom: 5rem;
+
+}
+.email p {
+  margin-bottom: 1.7rem;
+}
+.email{
   width: 100%;
 }
-main {
-  background-color: rgb(0, 0, 0);
-  grid-area: main;
-  margin: 10px;
+.email  input{
+  width: 100%;
+  height: 5rem;
+  border: none;
+  border-left: 6px solid var(--primary-color) ;
+  margin-left: 3.5rem;
 }
-h1 {
-  font-family: 'Work Sans', sans-serif;
-  font-size: 1.4rem;
-  padding: 10px;
-  color: hsla(148, 92%, 39%, 1);
+.email button {
+  width: 5rem;
+  height: 5rem;
+  border: 0.2rem solid var(--secondary-color);
+  background-color: var(--secondary-color);
 }
-h2,
-h3,
-p {
-  box-sizing: border-box;
-  font-family: 'Spartan', sans-serif;
-  font-size: 1rem;
-  padding: 10px;
-  margin: 5px 20px 5px 0;
-  color: hsla(0, 0%, 100%, 1);
+.email button img{
+  height: 100%;
+  width: 100%;
 }
-h3 {
-  color: hsla(258, 73%, 62%, 1);
+.send{
+  display: flex;
 }
-form {
-  margin: 10px auto 20px 10px;
-}
-label {
-  color: hsla(0, 0%, 66%, 1);
-  font-family: 'Spartan', sans-serif;
-}
-li {
-  text-decoration: none;
-  display: inline-block;
-  margin-right: -2px;
-  margin-left: -1.5px;
-}
-a {
-  text-decoration: none;
-  color: hsla(258, 73%, 62%, 1);
-}
-input {
-  display: block;
-  padding: 15px;
+.sign{
+  display: flex;
   width: 30rem;
-  border-left: 4px solid hsla(148, 92%, 39%, 1);
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
 }
-img#button {
-  position: relative;
-  bottom: -19.5px;
-  display: display-box;
+.sign p{
+  font-size: 2.8rem;
+  color: var(--secondary-color);
 }
-aside {
-  background-color: rgb(0, 0, 0);
-  grid-area: aside;
+.sign p img{
+  height: 3rem;
 }
-img#seta {
-  position: relative;
-  bottom: -7px;
-}
-img#img {
-  width: auto;
-  max-height: 100%;
-}
-.cat2 {
-  height: 700px;
-  overflow: hidden;
+.content{
+  display: flex;
+  flex-direction: column;
+  width:94%;
+  margin-left: 3.6rem;
+  margin-right: 3.7rem;
+  ;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
 }
