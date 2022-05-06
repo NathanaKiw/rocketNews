@@ -1,3 +1,4 @@
+
 *{
   margin: 0;
   padding: 0;
@@ -106,10 +107,11 @@ body{
   justify-content: center;
   margin-top: 1.5rem;
 }
-.sign p{
+.sign a{
   font-size: 1.5rem;
   color: var(--secondary-color);
 }
-.sign p img{
+.sign a img{
   height: 1.5rem;
 }
+
