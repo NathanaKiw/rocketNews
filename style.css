@@ -9,12 +9,19 @@
   --secondary-color: #8257E5;
   --paragraph: #ffffff;
 }
+html{
+  width: 100%;
+  height: 100%;
+}
 body{
   height: 100vh;
   width: 100vw;
+  overflow: overlay;
   display: flex;
   flex-direction: row-reverse;
   background-color: var(--background-blck);
+
+  font-size: 100%;
 
 }
 .wrapper{
@@ -26,53 +33,62 @@ body{
 }
 .wrapper header img{
   width: 55%;
-  margin-left: 2.8rem;
+  margin-left: 1rem;
+  margin-top: 3rem;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  width:94%;
+  margin-left: 1.5rem;
+  margin-right: 3.7rem;
   margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 .content h1{
   width: 100%;
   font-family: 'Work Sans';
   color: var(--primary-color);
   font-weight: 700;
-  font-size: 2.7rem;
+  font-size: 1.8rem;
   line-height: 130%;
 }
 .content h4{
   width: 100%;
   font-family: 'League Spartan';
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.23rem;
   line-height: 130%;
   color: var(--paragraph);
-  margin-top: 1.1rem;
+  margin-top: 1rem;
 }
 .content p{
   width: 100%;
   font-family: 'League Spartan';
   margin-top: 0.9rem;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   line-height: 130%;
   color: var(--paragraph);
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 
 }
 .email p {
-  margin-bottom: 1.7rem;
+  margin-bottom: 1.5rem;
 }
 .email{
   width: 100%;
 }
 .email  input{
   width: 100%;
-  height: 4.5rem;
+  height: 3rem;
   border: none;
   border-left: 6px solid var(--primary-color) ;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 .email button {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 3rem;
+  height: 3rem;
   border: 0.2rem solid var(--secondary-color);
   background-color: var(--secondary-color);
 }
@@ -91,18 +107,9 @@ body{
   margin-top: 1.5rem;
 }
 .sign p{
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--secondary-color);
 }
 .sign p img{
   height: 1.5rem;
-}
-.content{
-  display: flex;
-  flex-direction: column;
-  width:94%;
-  margin-left: 3.6rem;
-  margin-right: 3.7rem;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
 }
